@@ -8,12 +8,24 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyCompany
 build_property.RootNamespace = MyCompany
-build_property.ProjectDir = C:\Users\jorda\Source\Repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\
+build_property.ProjectDir = C:\Users\jorda\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\jorda\Source\Repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany
+build_property.MSBuildProjectDirectory = C:\Users\jorda\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jorda/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Achievement/Certificate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNoaWV2ZW1lbnRcQ2VydGlmaWNhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorda/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Achievement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNoaWV2ZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorda/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Admin/Achievement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWNoaWV2ZW1lbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jorda/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Employees/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEFkZC5jc2h0bWw=
