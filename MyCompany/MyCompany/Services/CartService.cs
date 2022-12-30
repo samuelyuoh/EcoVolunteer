@@ -21,5 +21,10 @@ namespace MyCompany.Services
             x => x.UserId.Equals(id));
             return cart;
         }
+        public void AddCart(Cart cart)
+        {
+            _dbContext.Carts.Add(cart);
+            _dbContext.SaveChanges();
+        }
     }
 }

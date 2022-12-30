@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qBP1bXH0Tu0CTnlQfLIU43/AIHcojQ8ND9rVBBugsV0=",
+  "Hash": "paBCbG0YpGoBFqrhHWUAdfqlAJJNYgiVFsFHk14vpn0=",
   "Source": "MyCompany",
   "BasePath": "_content/MyCompany",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\142a7fec-6401-482b-b3a8-405e20fcd0e1.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\Uploads\\2.jpg",
+      "SourceId": "MyCompany",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\",
+      "BasePath": "_content/MyCompany",
+      "RelativePath": "Uploads/2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\2.jpg"
     },
     {
       "Identity": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\Uploads\\661ff621-6542-4367-9d9d-47a476392fcc.jpeg",
