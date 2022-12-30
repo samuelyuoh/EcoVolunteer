@@ -12,8 +12,8 @@ using MyCompany;
 namespace MyCompany.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20221118011955_EmployeeImageURL")]
-    partial class EmployeeImageURL
+    [Migration("20221230030327_addCartDb")]
+    partial class addCartDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,25 @@ namespace MyCompany.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("MyCompany.Models.Cart", b =>
+                {
+                    b.Property<int>("CartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"));
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(7,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartId");
+
+                    b.ToTable("Carts");
+                });
 
             modelBuilder.Entity("MyCompany.Models.Department", b =>
                 {

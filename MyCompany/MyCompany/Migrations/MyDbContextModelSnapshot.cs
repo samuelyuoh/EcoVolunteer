@@ -22,6 +22,25 @@ namespace MyCompany.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("MyCompany.Models.Cart", b =>
+                {
+                    b.Property<int>("CartId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"));
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(7,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CartId");
+
+                    b.ToTable("Carts");
+                });
+
             modelBuilder.Entity("MyCompany.Models.Department", b =>
                 {
                     b.Property<string>("DepartmentId")

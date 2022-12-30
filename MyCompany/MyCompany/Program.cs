@@ -8,6 +8,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<MyDbContext>();
 builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddScoped<EmployeeService>();
+builder.Services.AddScoped<CartService>();
 
 var app = builder.Build();
 
