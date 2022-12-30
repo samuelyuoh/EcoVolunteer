@@ -19,6 +19,7 @@ namespace MyCompany
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> ItemInCart { get; set; }
         public DbSet<Achievement> Achievements { get; set; }
     }
 }

@@ -27,16 +27,30 @@ namespace MyCompany.Pages.Employees
         {
             EmployeeList = _employeeService.GetAll();
         }
-        public IActionResult OnPostAsync()
+        public IActionResult OnPostAsync(string button)
         {
             if (ModelState.IsValid)
             {
-                MyCart.UserId = 1;
-                MyCart.Total = 0;
-                _cartService.AddCart(MyCart);
-                TempData["FlashMessage.Type"] = "success";
-                TempData["FlashMessage.text"] = string.Format("Cart for User {0} is added", MyCart.UserId);
-                return Redirect("/Employees");
+                if (button.ToLower() == "test")
+                {
+                    MyCart.UserId = 1;
+                    MyCart.Total = 0;
+                    _cartService.CreateCart(MyCart);
+                    TempData["FlashMessage.Type"] = "success";
+                    TempData["FlashMessage.text"] = string.Format("Cart for User {0} is added", MyCart.UserId);
+                    return Redirect("/Employees");
+                }else if (button.ToLower() == "add to cart")
+                {
+                    _cartService.AddToCart(1);
+                    TempData["FlashMessage.Type"] = "success";
+                    TempData["FlashMessage.text"] = string.Format("added to cart");
+                }else if(button.ToLower() == "remove all items")
+                {
+                    _cartService.removeAllItems(1);
+                    TempData["FlashMessage.Type"] = "error";
+                    TempData["FlashMessage.text"] = string.Format("deleted item in cart");
+                }
+
             }
             return Page();
         }
