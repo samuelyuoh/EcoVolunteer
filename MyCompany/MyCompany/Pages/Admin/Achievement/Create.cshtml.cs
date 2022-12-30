@@ -9,13 +9,13 @@ namespace MyCompany.Pages.Admin.Achievement
     {
         private readonly AchievementService _achievementService;
         private IWebHostEnvironment _environment;
-        public AddModel(AchievementService achievementService, IWebHostEnvironment environment)
+        public CreateModel(AchievementService achievementService, IWebHostEnvironment environment)
         {
             _achievementService = achievementService;
             _environment = environment;
         }
-        [BindProperty]
-        public Achievement MyAchievement { get; set; } = new();
+        //[BindProperty]
+        //public Achievement MyAchievement { get; set; } = new();
         public void OnGet()
         {
         }
