@@ -14,19 +14,19 @@ namespace MyCompany.Models
         public DateTime CreateDate { get; set; } = DateTime.Now;
 
         [Required]
-        public int SessionId { get; set; }
+        public int SessionId { get; set; } = 0;
 
-        [Required]
+        [Required, ForeignKey("User")]
         public int UserId { get; set; }
 
         [Required]
-        public int EventId { get; set; }
+        public int EventId { get; set; } = 0;
 
         public Event? Event { get; set; }
 
         public User? User { get; set; }
-
-        public Session? Session { get; set; } 
+       
+        //public Session? Session { get; set; } 
 
 
     }

@@ -7,9 +7,8 @@ namespace MyCompany.Models
 {
     public class User
     {
-        [Required, MaxLength(50)]
-        [Display(Name = "User ID")]
-        public string UserId { get; set; } = string.Empty;
+        [Required, Key]
+        public int UserId { get; set; }
         [Required, MaxLength(50)]
         public string Name { get; set; } = string.Empty;
 
@@ -26,13 +25,13 @@ namespace MyCompany.Models
         public int Postal { get; set; } = 0;
 
         [Required, StringLength(8)]
-        public PhoneAttribute Phone { get; set; } = null;
+        public string Phone { get; set; } = string.Empty;
 
         [Required]
-        public EmailAddressAttribute Email { get; set; } = null;
+        public string Email { get; set; } = string.Empty;
 
         [Required]
-        public PasswordPropertyTextAttribute password { get; set; } = null;
+        public string password { get; set; } = string.Empty;
 
         [MaxLength(50)]
         public string? ImageURL { get; set; }
