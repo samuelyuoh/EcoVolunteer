@@ -16,7 +16,15 @@ namespace MyCompany
             optionsBuilder.UseSqlServer(connectionString);
         }
         //DbSet = table in db
+
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Organiser> Organisers { get; set; }
+        public DbSet<Session> Sessions { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
+
+        
     }
 }
