@@ -10,6 +10,7 @@ namespace MyCompany.Services
         }
         public List<Employee> GetAll()
         {
+            _context.Database.EnsureCreated();
             return _context.Employees.OrderBy(m => m.Name).ToList();
         }
         public Employee? GetEmployeeById(string id)
