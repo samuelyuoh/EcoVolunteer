@@ -24,7 +24,10 @@ namespace MyCompany
         public DbSet<Organiser> Organisers { get; set; }
         public DbSet<Session> Sessions { get; set; }
         public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> ItemInCart { get; set; }
+        public DbSet<Achievement> Achievements { get; set; }
 
-        
+
     }
 }
