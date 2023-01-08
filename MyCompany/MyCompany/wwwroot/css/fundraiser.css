@@ -1,0 +1,170 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+*/
+
+* {
+    /*margin: 0;
+    padding: 0;
+    box-sizing: border-box;*/
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: #f3f5f9;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+    .wrapper .sidebar {
+        width: 200px;
+        height: 100%;
+        background: #037e58;
+        padding: 30px 0px;
+        position: fixed;
+    }
+
+        .wrapper .sidebar h3 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .wrapper .sidebar ul li {
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border-bottom: 1px solid #75b6a2;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: white;
+        }
+
+            .wrapper .sidebar ul li a {
+                color: #75b6a2;
+                display: block;
+            }
+
+                .wrapper .sidebar ul li a .fas {
+                    width: 25px;
+                }
+
+            .wrapper .sidebar ul li:hover {
+                background-color: #75b6a2;
+            }
+
+                .wrapper .sidebar ul li:hover a {
+                    color: #fff;
+                }
+
+    .wrapper .main_content {
+        width: 100%;
+        margin-left: 200px;
+        display: block;
+        position: relative;
+        padding: 15px;
+    }
+
+        .wrapper .main_content .header {
+            font-size: 25px;
+            display: inline-block;
+        }
+
+        .wrapper .main_content .timeline {
+            display: inline-block;
+            position: absolute;
+            left: 23%;
+        }
+
+        .wrapper .main_content .timeline p {
+            color: #868686;
+            padding-top: 8px;
+            display: inline-block;
+        }
+
+        .wrapper .main_content .timeline #current {
+            color: #868686;
+            text-decoration: none;
+            display: inline-block;
+            padding-top: 8px;
+        }
+
+            .wrapper .main_content .timeline #current:hover {
+                color: #037e58;
+            }
+
+            .wrapper .main_content .timeline #current:active {
+                color: #037e58;
+            }
+
+
+        .wrapper .main_content .timeline #upcoming {
+            color: #868686;
+            display: inline-block;
+            text-decoration: none;
+            padding-top: 8px;
+        }
+
+            .wrapper .main_content .timeline #upcoming:hover {
+                color: #037e58;
+            }
+
+            .wrapper .main_content .timeline #upcoming:active {
+                color: #037e58;
+            }
+
+        .wrapper .main_content button {
+            border-color: #037e58;
+            position: absolute;
+            right: 40%;
+            border-radius: 10px;
+            padding: 5px;
+            display: inline-block;
+        }
+
+            .wrapper .main_content button:hover {
+                color: white;
+                background-color: #037e58;
+                box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+            }
+
+.wrapper-card {
+    margin-left: 200px;
+    position: absolute;
+    height: 100%;
+    top: 23%;
+    width: 100%;
+/*    display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
+    gap: 8px;
+    padding-left: 8px;
+}
+
+    .wrapper-card .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 19.6%;
+        height: calc(100% - 280px);
+        padding: 8px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .wrapper-card .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.wrapper-card .container-card {
+    padding: 2px 16px;
+    position: relative;
+}

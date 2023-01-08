@@ -1,0 +1,74 @@
+﻿@page
+@model MyCompany.Pages.Fundraisers.HostModel
+@{
+}
+<link rel="stylesheet" href="~/css/hostFundraiser.css" />
+
+<body>
+    <div class="container">
+        <div class="title">Host a fundraiser</div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="content">
+            <form method="post">
+                <div class="user-details">
+
+                    <div class="input-box">
+                        <label class="details" asp-for="MyFundraiser.FundraiserName"></label>
+                        <span asp-validation-for="MyFundraiser.FundraiserName" class="text-danger"></span>
+                        <input type="text" placeholder="Enter fundraiser name" asp-for="MyFundraiser.FundraiserName">
+                    </div>
+
+                     <div class="input-box">
+                        <label class="details" asp-for="MyFundraiser.Reason"></label>
+                        <span asp-validation-for="MyFundraiser.Reason" class="text-danger"></span>
+                        <input type="text" placeholder="Enter reason for hosting fundraiser" asp-for="MyFundraiser.Reason">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details" asp-for="MyFundraiser.StartingGoal"></label>
+                        <span asp-validation-for="MyFundraiser.StartingGoal" class="text-danger"></span>
+                        <input type="number" step="0.01" placeholder="Enter starting goal (S$)" asp-for="MyFundraiser.StartingGoal">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details" asp-for="MyFundraiser.StartDate"></label>
+                        <span asp-validation-for="MyFundraiser.StartDate" class="text-danger"></span>
+                        <input type="date" placeholder = "Enter starting date" value="@DateTime.Now.Date" asp-for="MyFundraiser.StartDate">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details" asp-for="MyFundraiser.EndDate"></label>
+                        <span asp-validation-for="MyFundraiser.EndDate" class="text-danger"></span>
+                        <input type="date" placeholder="Enter end date" value="@DateTime.Now.Date" asp-for="MyFundraiser.EndDate">
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details" asp-for="MyFundraiser.CategoryId"></label>
+                        @Html.DropDownListFor(m => m.MyFundraiser.CategoryId, new SelectList(HostModel.CategoryList, "CategoryId", "Name"), "-- Select --", new { style = "margin-bottom: 15px; width: calc(100% / 2 - 20px); height: 45px; width: 100%; outline: none; font-size: 16px; border-radius: 5px; padding-left: 15px; border: 1px solid #ccc; border-bottom-width: 2px; transition: all 0.3s ease; border-color: #9b59b6;"})
+                    </div>
+
+                    <div class="input-box-description">
+                        <label class="details" asp-for="MyFundraiser.Description"></label>
+                        <span asp-validation-for="MyFundraiser.Description" class="text-danger"></span>
+                        <input type="text" placeholder="Enter description for fundraiser" asp-for="MyFundraiser.Description">
+                    </div>
+
+                    <div class="input-box-description">
+                        <label class="details" asp-for="MyFundraiser.Description"></label>
+                        <span asp-validation-for="MyFundraiser.Description" class="text-danger"></span>
+                        <input type="text" placeholder="This is a placeholder for image in the future" asp-for="MyFundraiser.Description">
+                    </div>
+
+                <div class="button">
+                    <input type="submit" value="Host fundraiser">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

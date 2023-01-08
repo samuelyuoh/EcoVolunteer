@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {}
+    "C:\\Users\\chant\\OneDrive\\Desktop\\School\\yr2\\sem 2\\EDP\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {
+    "C:\\Users\\chant\\OneDrive\\Desktop\\School\\yr2\\sem 2\\EDP\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+        "projectUniqueName": "C:\\Users\\chant\\OneDrive\\Desktop\\School\\yr2\\sem 2\\EDP\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
         "projectName": "MyCompany",
-        "projectPath": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
-        "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
+        "projectPath": "C:\\Users\\chant\\OneDrive\\Desktop\\School\\yr2\\sem 2\\EDP\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+        "packagesPath": "C:\\Users\\chant\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chant\\OneDrive\\Desktop\\School\\yr2\\sem 2\\EDP\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chant\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

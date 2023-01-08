@@ -1,0 +1,58 @@
+﻿@page
+@model MyCompany.Pages.Fundraisers.ViewModel
+@{
+}
+
+<div>
+    <div>
+@*        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.FundraiserId):
+        </label>
+        <label>@Model.MyFundraiser.FundraiserId</label>
+    </div>*@
+    <div>
+        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.FundraiserName):
+        </label>
+        <label>@Model.MyFundraiser.FundraiserName</label>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.Reason):
+        </label>
+        <label>@Model.MyFundraiser.Reason</label>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.StartingGoal):
+        </label>
+            <label>@Model.MyFundraiser.StartingGoal.ToString("C")</label>
+        </div>
+    <div>
+        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.StartDate):
+        </label>
+        <label>@Model.MyFundraiser.StartDate.ToShortDateString()</label>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.EndDate):
+        </label>
+        <label>@Model.MyFundraiser.EndDate.ToShortDateString()</label>
+    </div>
+    <div>
+        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.CategoryId):
+        </label>
+        <label>@Model.MyFundraiser.fundraiserCategory?.Name</label>
+    </div>
+        <label class="col-sm-2 col-form-label">
+            @Html.DisplayNameFor(m => m.MyFundraiser.Description):
+        </label>
+        <label>@Model.MyFundraiser.Description</label>
+    </div>
+    <div class="mt-3">
+        <a class="btn btn-secondary" href="/Fundraisers">Back</a>
+    </div>
+
+</div>

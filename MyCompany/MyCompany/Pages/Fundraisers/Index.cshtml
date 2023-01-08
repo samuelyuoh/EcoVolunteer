@@ -1,0 +1,62 @@
+﻿@page
+@model MyCompany.Pages.Fundraiser.IndexModel
+@{
+    ViewData["Title"] = "Fundraisers";
+}
+
+<link rel="stylesheet" href="~/css/fundraiser.css" />
+
+<div class = "container">
+
+    <div class="wrapper">
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul style="list-style-type: none;">
+                <li>
+                    <input type="checkbox" id="beachCleaning" name="beachCleaning" value="beachCleaning">
+                    <label for="beachCleaning">Beach Cleaning</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="treePlanting" name="treePlanting" value="treePlanting">
+                    <label for="treePlanting">Tree Planting</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="wildlife" name="wildlife" value="wildlife">
+                    <label for="wildlife">Wildlife</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="awareness" name="awareness" value="awareness">
+                    <label for="awareness">Raising Awareness</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_content">
+            <div class="header">Fundraisers</div>
+            <div class="timeline">
+                <a href="" id="current">CURRENT</a>
+                <p>  /  </p>
+                <a href="" id="upcoming"> UPCOMING</a>
+            </div>
+            <a href="/Fundraisers/Host">
+                <button href="/Fundraisers/Host">Host a Fundraiser</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="wrapper-card">
+        @foreach (var item in Model.FundraiserList)
+        {
+            <a asp-page="/Fundraisers/View" asp-route-id="@item.FundraiserId" style="text-decoration: none; color: #868686;">
+            <div class="card">
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" style="width:100%">
+                <div class="container-card">
+                    <h4>@item.FundraiserName</h4>
+                    <p>@item.StartingGoal</p>
+                </div>
+            </div>
+            </a>
+        }
+    </div>
+
+</div>
