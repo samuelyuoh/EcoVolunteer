@@ -10,6 +10,9 @@ builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddScoped<EmployeeService>();
 builder.Services.AddScoped<AchievementService>();
 builder.Services.AddScoped<CartService>();
+builder.Services.AddScoped<EventService>();
+builder.Services.AddScoped<BookingService>();
+builder.Services.AddScoped<SessionService>();
 
 var app = builder.Build();
 
