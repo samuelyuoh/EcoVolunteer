@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+//using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyCompany.Models;
@@ -10,12 +10,12 @@ namespace MyCompany.Pages.Users
     {
 		private readonly UserService _userService;
 		private IWebHostEnvironment _environment;
-		private readonly SignInManager<IdentityUser> signInManager;
-		public LoginModel(UserService userService, IWebHostEnvironment environment, SignInManager<IdentityUser> signInManager)
+		//private readonly SignInManager<IdentityUser> signInManager;
+		public LoginModel(UserService userService, IWebHostEnvironment environment)
 		{
 			_userService = userService;
 			_environment = environment;
-			this.signInManager = signInManager;
+			//this.signInManager = signInManager;
 		}
 		[BindProperty]
 		public User MyUser { get; set; } = new();
@@ -36,11 +36,11 @@ namespace MyCompany.Pages.Users
 				{
 					TempData["FlashMessage.Type"] = "success";
 					TempData["FlashMessage.Text"] = string.Format("Successful Login");
-                    var identityResult = await signInManager.SignInAsync(user, false);
-                    if (identityResult.Succeeded)
-                    {
-                        return RedirectToPage("Index");
-                    }
+                    //var identityResult = await signInManager.SignInAsync(user, false);
+                    //if (identityResult.Succeeded)
+                   // {
+                       // return RedirectToPage("Index");
+                   // }
                     return Redirect("/");
                 }
 				TempData["FlashMessage.Type"] = "danger";
@@ -50,5 +50,4 @@ namespace MyCompany.Pages.Users
 			return Page();
 		}
 	}
-}
 }
