@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MyCompany.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class initalCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -100,16 +100,16 @@ namespace MyCompany.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),
+                    NRIC = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AdminRole = table.Column<bool>(name: "Admin_Role", type: "bit", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Postal = table.Column<int>(type: "int", maxLength: 6, nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(8)", maxLength: 8, nullable: false),
+                    Postal = table.Column<int>(type: "int", nullable: false),
+                    Phone = table.Column<int>(type: "int", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageURL = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     DateJoined = table.Column<DateTime>(name: "Date_Joined", type: "datetime2", nullable: false),
                     BanStatus = table.Column<bool>(name: "Ban_Status", type: "bit", nullable: false),
@@ -152,7 +152,7 @@ namespace MyCompany.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CreateDate = table.Column<DateTime>(type: "date", nullable: false),
                     SessionId = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     EventId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -180,7 +180,8 @@ namespace MyCompany.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(type: "int", nullable: false),
                     EventId = table.Column<int>(type: "int", nullable: false),
-                    OrganiserRole = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    OrganiserRole = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId1 = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -192,11 +193,10 @@ namespace MyCompany.Migrations
                         principalColumn: "EventId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Organisers_Users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_Organisers_Users_UserId1",
+                        column: x => x.UserId1,
                         principalTable: "Users",
-                        principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "UserId");
                 });
 
             migrationBuilder.CreateTable(
@@ -208,7 +208,8 @@ namespace MyCompany.Migrations
                     Timing = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Capacity = table.Column<int>(type: "int", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    EventId = table.Column<int>(type: "int", nullable: false)
+                    EventId = table.Column<int>(type: "int", nullable: false),
+                    UserId1 = table.Column<string>(type: "nvarchar(450)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -220,11 +221,10 @@ namespace MyCompany.Migrations
                         principalColumn: "EventId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Sessions_Users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_Sessions_Users_UserId1",
+                        column: x => x.UserId1,
                         principalTable: "Users",
-                        principalColumn: "UserId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "UserId");
                 });
 
             migrationBuilder.CreateIndex(
@@ -248,9 +248,9 @@ namespace MyCompany.Migrations
                 column: "EventId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Organisers_UserId",
+                name: "IX_Organisers_UserId1",
                 table: "Organisers",
-                column: "UserId");
+                column: "UserId1");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Sessions_EventId",
@@ -258,9 +258,9 @@ namespace MyCompany.Migrations
                 column: "EventId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sessions_UserId",
+                name: "IX_Sessions_UserId1",
                 table: "Sessions",
-                column: "UserId");
+                column: "UserId1");
         }
 
         /// <inheritdoc />
