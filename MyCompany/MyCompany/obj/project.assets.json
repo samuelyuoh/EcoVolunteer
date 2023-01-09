@@ -3510,19 +3510,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nigel\\.nuget\\packages\\": {}
+    "D:\\Users\\211562H\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+      "projectUniqueName": "D:\\Users\\211562H\\Source\\Repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
       "projectName": "MyCompany",
-      "projectPath": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
-      "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
+      "projectPath": "D:\\Users\\211562H\\Source\\Repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+      "packagesPath": "D:\\Users\\211562H\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\211562H\\Source\\Repos\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Users\\211562H\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3582,16 +3587,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
