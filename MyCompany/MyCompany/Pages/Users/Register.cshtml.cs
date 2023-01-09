@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+//using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyCompany.Models;
@@ -10,14 +10,14 @@ namespace MyCompany.Pages.Users
     {
 		private readonly UserService _userService;
 		private IWebHostEnvironment _environment;
-        private UserManager<IdentityUser> userManager { get; }
-        private SignInManager<IdentityUser> signInManager { get; }
-        public RegisterModel(UserService userService, IWebHostEnvironment environment, UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        //private UserManager<IdentityUser> userManager { get; }
+        //private SignInManager<IdentityUser> signInManager { get; }
+        public RegisterModel(UserService userService, IWebHostEnvironment environment)
 		{
 			_userService = userService;
 			_environment = environment;
-            this.userManager = userManager;
-			this.signInManager = signInManager;
+            //this.userManager = userManager;
+			//this.signInManager = signInManager;
 
         }
 		[BindProperty]
@@ -43,8 +43,8 @@ namespace MyCompany.Pages.Users
 					"Email {0} alreay exists", MyUser.Email);
 					return Page();
 				}
-				_userService.AddUser(MyUser);
-                var user = new IdentityUser()
+				//_userService.AddUser(MyUser);
+                //var user = new IdentityUser()
                 {
                     
                 };
