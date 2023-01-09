@@ -17,7 +17,7 @@ namespace MyCompany.Models
         public int SessionId { get; set; } = 0;
 
         [Required, ForeignKey("User")]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         [Required]
         public int EventId { get; set; } = 0;
