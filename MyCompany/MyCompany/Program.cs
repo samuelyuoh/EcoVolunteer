@@ -13,6 +13,7 @@ builder.Services.AddScoped<CartService>();
 builder.Services.AddScoped<EventService>();
 builder.Services.AddScoped<BookingService>();
 builder.Services.AddScoped<SessionService>();
+builder.Services.AddScoped<OrganiserService>();
 
 var app = builder.Build();
 
