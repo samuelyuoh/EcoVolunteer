@@ -9,9 +9,6 @@ namespace MyCompany.Models
 	{
         [Required, Key]
         public int UserId { get; set; }
-		[Required, MaxLength(50)]
-		[Display(Name = "User ID")]
-		public string UserId { get; set; } = string.Empty;
 		[Required, RegularExpression(@"^[STFG]\d{7}[A-Z]$", ErrorMessage = "Invalid NRIC.")]
         	public string NRIC { get; set; } = string.Empty; 
 		[Required, MaxLength(50)]
