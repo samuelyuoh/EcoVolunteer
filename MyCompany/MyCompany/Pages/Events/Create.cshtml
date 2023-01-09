@@ -69,6 +69,59 @@
                 <!-- Step 2 input fields -->
                 <div class="mt-3">
                     Step 2 input fields goes here..
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label" asp-for="MyEvent.EventName"></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" asp-for="MyEvent.EventName" />
+                            <span asp-validation-for="MyEvent.EventName" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label" asp-for="MyEvent.Description"></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" asp-for="MyEvent.Description" />
+                            <span asp-validation-for="MyEvent.Description" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label" asp-for="MyEvent.StartDate"></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" asp-for="MyEvent.StartDate" />
+                            <span asp-validation-for="MyEvent.StartDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label" asp-for="MyEvent.EndDate"></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" asp-for="MyEvent.EndDate" />
+                            <span asp-validation-for="MyEvent.EndDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label" asp-for="MyEvent.Location"></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" asp-for="MyEvent.Location" />
+                            <span asp-validation-for="MyEvent.Location" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label" asp-for="MyEvent.Capacity"></label>
+                        <div class="col-sm-9">
+                            <input class="form-control" asp-for="MyEvent.Capacity" />
+                            <span asp-validation-for="MyEvent.Capacity" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
                 <div class="mt-3">
                     <button class="button btn-navigate-form-step" type="button" step_number="1">Prev</button>
