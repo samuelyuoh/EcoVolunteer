@@ -249,3 +249,9 @@ C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\obj\Debu
 C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\obj\Debug\net6.0\MyCompany.csproj.CopyComplete
 C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\obj\Debug\net6.0\MyCompany.genruntimeconfig.cache
 C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\obj\Debug\net6.0\ref\MyCompany.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\libman.json
