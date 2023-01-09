@@ -9,6 +9,7 @@ namespace MyCompany.Models
         public int EventId { get; set; }
 
         [Required]
+        [Display(Name = "Event Name")]
         public string EventName { get; set; } = string.Empty;
 
         [Required]
@@ -61,6 +62,7 @@ namespace MyCompany.Models
         // 1 public + approved, 2 public + pending,  3 private + approved, 4 private + pending, 5 disapproved
         public int Status { get; set; } = 2;
 
+        [Display(Name = "Organisation Name")]
         public string? OrganisationName { get; set; } = string.Empty;
 
         public List<Organiser> Organisers { get; set; }
