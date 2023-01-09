@@ -12,6 +12,8 @@ namespace MyCompany.Models
 		[Required, MaxLength(50)]
 		[Display(Name = "User ID")]
 		public string UserId { get; set; } = string.Empty;
+		[Required, RegularExpression(@"^[STFG]\d{7}[A-Z]$", ErrorMessage = "Invalid NRIC.")]
+        	public string NRIC { get; set; } = string.Empty; 
 		[Required, MaxLength(50)]
 		public string Name { get; set; } = string.Empty;
 
@@ -24,11 +26,11 @@ namespace MyCompany.Models
 		[Required, MaxLength(100)]
 		public string Address { get; set; } = string.Empty;
 
-		[Required, StringLength(6)]
-		public int Postal { get; set; } = 0;
+		[Required, RegularExpression(@"^\d{6}$", ErrorMessage = "Invalid Postal.")]
+		public int Postal { get; set; }
 
-		[Required, StringLength(8)]
-        public string Phone { get; set; } = string.Empty;
+		[Required, RegularExpression(@"^(6|8|9)\d{7}$", ErrorMessage = "Invalid Phone number.")]
+		public int Phone { get; set; }
 
 		[Required]
         public string Email { get; set; } = string.Empty;
