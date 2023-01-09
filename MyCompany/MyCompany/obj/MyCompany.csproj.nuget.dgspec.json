@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ryant\\Source\\Repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {}
+    "C:\\Users\\ryant\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ryant\\Source\\Repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {
+    "C:\\Users\\ryant\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ryant\\Source\\Repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+        "projectUniqueName": "C:\\Users\\ryant\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
         "projectName": "MyCompany",
-        "projectPath": "C:\\Users\\ryant\\Source\\Repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+        "projectPath": "C:\\Users\\ryant\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
         "packagesPath": "C:\\Users\\ryant\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ryant\\Source\\Repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
+        "outputPath": "C:\\Users\\ryant\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ryant\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,17 +42,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             }
           },
           "imports": [

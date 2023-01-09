@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using MyCompany;
 using MyCompany.Services;
 
