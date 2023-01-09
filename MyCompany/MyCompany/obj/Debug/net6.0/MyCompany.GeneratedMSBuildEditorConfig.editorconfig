@@ -5,65 +5,64 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyCompany
 build_property.RootNamespace = MyCompany
-build_property.ProjectDir = C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\
+build_property.ProjectDir = C:\Users\Nigel\source\repos\EcoVolunteer\MyCompany\MyCompany\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany
+build_property.MSBuildProjectDirectory = C:\Users\Nigel\source\repos\EcoVolunteer\MyCompany\MyCompany
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Employees/Add.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Employees/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Employees/Details.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Employees/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Employees/Index.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Employees/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Error.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Index.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Privacy.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Shared/_FlashMessage.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Shared/_FlashMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9GbGFzaE1lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Users/Login.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Users/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Users/Register.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Users/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/_ViewImports.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/_ViewStart.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ryant/source/repos/samuelyuoh/EcoVolunteer/MyCompany/MyCompany/Pages/Shared/_Layout.cshtml]
+[C:/Users/Nigel/source/repos/EcoVolunteer/MyCompany/MyCompany/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6oq021fazj
