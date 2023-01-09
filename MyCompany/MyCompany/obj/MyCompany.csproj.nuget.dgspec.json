@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {}
+    "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {
+    "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+        "projectUniqueName": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
         "projectName": "MyCompany",
-        "projectPath": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
-        "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
+        "projectPath": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
+        "packagesPath": "C:\\Users\\Nigel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nigel\\source\\repos\\EcoVolunteer\\MyCompany\\MyCompany\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nigel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
