@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+﻿ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
@@ -7,17 +7,19 @@ namespace MyCompany.Models
 {
 	public class User
 	{
-        [Required, Key]
-        public int UserId { get; set; }
-		[Required, RegularExpression(@"^[STFG]\d{7}[A-Z]$", ErrorMessage = "Invalid NRIC.")]
-        	public string NRIC { get; set; } = string.Empty; 
+		[Required]
+		[Key]
+		public string UserId { get; set; } = Guid.NewGuid().ToString();
 		[Required, MaxLength(50)]
 		public string Name { get; set; } = string.Empty;
 
 		[Required, Range(0, 120)]
 		public int Age { get; set; } = 0;
 
-		[Required]
+        [Required, RegularExpression(@"^[STFG]\d{7}[A-Z]$", ErrorMessage = "Invalid NRIC.")]
+        public string NRIC { get; set; } = string.Empty;
+
+        [Required]
 		public Boolean Admin_Role { get; set; } = false;
 
 		[Required, MaxLength(100)]
@@ -32,11 +34,15 @@ namespace MyCompany.Models
 		[Required]
         public string Email { get; set; } = string.Empty;
 
-		[Required]
-        public string password { get; set; } = string.Empty;
+		[Required(ErrorMessage = "Password is required.")]
+		public string Password { get; set; } = string.Empty;
+		[Required(ErrorMessage = "Confirmation Password is required.")]
+		[Compare("Password", ErrorMessage = "Password and Confirmation Password must match.")]
+		[NotMapped]
+		public string CfmPassword { get; set; } = string.Empty;
 
 		[MaxLength(50)]
-		public string? ImageURL { get; set; }
+		public string? ImageURL { get; set; } = string.Empty;
 
 		[Required]
 		public DateTime Date_Joined { get; set; } = DateTime.Now;
