@@ -1,0 +1,70 @@
+﻿@page
+@model MyCompany.Pages.Events.ViewMyEventsModel
+@{
+    ViewData["Title"] = "View My Event";
+}
+<div style="margin: 5% 8%">
+    <div style="height: 20%; background-color: #5cb874; display:block; font-weight: bold; font-size: 300%; color: white; padding-left: 1%">
+        My Events
+        <button class="btn btn-primary" style="float:right; margin: 1.5%"><a href="/events/create" style="color: white;">Create Event</a></button>
+    </div>
+</div>
+@{
+    var eventListCount = Model.eventList.Count;
+}@if (eventListCount.Equals(1))
+{
+    <div>
+        <img src="~/Uploads/Events/no events.png" style="width: 60%; margin: auto;display: block;margin-bottom: 5%"/>
+    </div>
+    
+}else{
+    @foreach (var o in Model.eventList)
+    {
+        <div style="display: inline; margin-bottom: 5%" class="container1">
+            <div class="card1 d-flex flex-row" style="margin-bottom: 1%">
+                <div>
+                    <img src="~/uploads/events/no events.png" alt="no" style="max-height: 200px">
+                </div>
+                <div style="padding: 1.5%; width: 50%">
+                    <h2><b>Event Title</b></h2>
+                    <p>Description</p>
+                </div>
+                <div style="display: inline; padding: 1.5%">
+                    <p>Start Date: 10/1/2023</p>
+                    <p>End Date: 11/1/2023</p>
+                    <p>Available Openings: 10</p>
+                    <p>Location: NYP</p>
+                </div>
+            </div>
+
+        </div>
+    }
+    
+}
+<div style="margin-bottom: 5%">
+
+</div>
+
+<style>
+    .card1  {
+        border: 2px solid #ccc !important;
+        border-radius: 5px;
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card1:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+        padding: 2px 16px;
+    }
+</style>
+

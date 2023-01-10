@@ -15,11 +15,13 @@ namespace MyCompany.Models
         [Required]
         [DataType(DataType.DateTime)]
         [Column(TypeName = "date")]
+        [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
 
         [Required]
         [DataType(DataType.DateTime)]
         [Column(TypeName = "date")]
+        [Display(Name = "End Date")]
         public DateTime EndDate { get; set; }
 
         [Required]
@@ -28,6 +30,7 @@ namespace MyCompany.Models
         public DateTime CreateDate { get; set; } = DateTime.Now;
 
         [Required]
+        [Display(Name = "Event Location")]
         // can be physical location or online
         public string Location { get; set; } = string.Empty;
 
@@ -35,6 +38,7 @@ namespace MyCompany.Models
         public string Description { get; set; } = string.Empty;
 
         [Required]
+        [Display(Name = "Total Capacity")]
         public int Capacity { get; set; }
 
         [Required]

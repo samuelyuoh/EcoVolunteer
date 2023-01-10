@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Create Event";
 }
-<div>
+<div style="margin: 5% 10%">
     <h1>Create Event</h1>
     <div id="multi-step-form-container">
         <!-- Form Steps / Progress Bar -->
@@ -105,7 +105,7 @@
                     <div class="row mb-3">
                         <label class="col-sm-3 col-form-label" asp-for="MyEvent.Location"></label>
                         <div class="col-sm-9">
-                            <input class="form-control" asp-for="MyEvent.Location" />
+                            <input class="form-control" asp-for="MyEvent.Location" placeholder="Online or Physical Address"/>
                             <span asp-validation-for="MyEvent.Location" class="text-danger"></span>
                         </div>
                     </div>
