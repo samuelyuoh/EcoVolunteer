@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyCompany.Models;
 using MyCompany.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace MyCompany.Pages.Events
 {
@@ -30,6 +31,7 @@ namespace MyCompany.Pages.Events
         [BindProperty]
         public Session MySession { get; set; } = new();
         [BindProperty]
+        [Required, RegularExpression(@"^[STFG]\d{7}[A-Z]$", ErrorMessage = "Invalid NRIC.")]
         public string NRIC { get; set; } = string.Empty;
         public void OnGet()
         {

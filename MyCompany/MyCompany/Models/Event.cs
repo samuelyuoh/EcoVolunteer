@@ -38,7 +38,7 @@ namespace MyCompany.Models
         public string Description { get; set; } = string.Empty;
 
         [Required]
-        [Display(Name = "Total Capacity")]
+        [Display(Name = "Total Openings")]
         public int Capacity { get; set; }
 
         [Required]
@@ -52,19 +52,20 @@ namespace MyCompany.Models
         // type of event (beach cleaning etc)
         public string Type { get; set; } = string.Empty;
 
-        [Required]
         // set range
+        [Display(Name = "Minimum Age")]
         public int? MinAge { get; set; }
 
         [Required]
+        [Display(Name = "Experience Level Required")]
         public string ExpLevel { get; set; } = string.Empty;
 
         [DataType(DataType.ImageUrl)]
         public string? GuideUrl { get; set; } = string.Empty;
 
         [Required]
-        // 1 public + approved, 2 public + pending,  3 private + approved, 4 private + pending, 5 disapproved
-        public int Status { get; set; } = 2;
+        // 1 public + approved, 2 public + pending,  3 private + approved, 4 private + pending, 5 disapproved, 6 deleted
+        public int Status { get; set; } = 4;
 
         [Display(Name = "Organisation Name")]
         public string? OrganisationName { get; set; } = string.Empty;
