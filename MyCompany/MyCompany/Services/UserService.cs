@@ -11,22 +11,22 @@ namespace MyCompany.Services
 		}
 		public List<User> GetAll()
 		{
-			return _context.Users.OrderBy(m => m.UserId).ToList();	
+			return _context.AspNetUsers.OrderBy(m => m.Id).ToList();	
 		}
 		public User? GetUserByEmail(string email)
 		{
-			User? user = _context.Users.FirstOrDefault(
-			x => x.Email.Equals(email));
+			User? user = _context.AspNetUsers.FirstOrDefault(
+			x => x.NRIC.Equals(email));
 			return user;
 		}
 		public void AddUser(User user)
 		{
-			_context.Users.Add(user);
+			_context.AspNetUsers.Add(user);
 			_context.SaveChanges();
 		}
 		public void UpdateUser(User user)
 		{
-			_context.Users.Update(user);
+			_context.AspNetUsers.Update(user);
 			_context.SaveChanges();
 		}
 	}

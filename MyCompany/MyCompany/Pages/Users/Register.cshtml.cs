@@ -1,4 +1,4 @@
-//using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyCompany.Models;
@@ -10,14 +10,14 @@ namespace MyCompany.Pages.Users
     {
 		private readonly UserService _userService;
 		private IWebHostEnvironment _environment;
-        //private UserManager<IdentityUser> userManager { get; }
-        //private SignInManager<IdentityUser> signInManager { get; }
-        public RegisterModel(UserService userService, IWebHostEnvironment environment)
+        private UserManager<IdentityUser> userManager { get; }
+        private SignInManager<IdentityUser> signInManager { get; }
+        public RegisterModel(UserService userService, IWebHostEnvironment environment, UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
 		{
 			_userService = userService;
 			_environment = environment;
-            //this.userManager = userManager;
-			//this.signInManager = signInManager;
+            this.userManager = userManager;
+			this.signInManager = signInManager;
 
         }
 		[BindProperty]
@@ -43,16 +43,17 @@ namespace MyCompany.Pages.Users
 					"Email {0} alreay exists", MyUser.Email);
 					return Page();
 				}
-				//_userService.AddUser(MyUser);
-                //var user = new IdentityUser()
+                _userService.AddUser(MyUser);
+                var result = await userManager.CreateAsync(MyUser);
+                if (result.Succeeded)
                 {
-                    
-                };
-
+                    await signInManager.SignInAsync(MyUser, false);
+                    return RedirectToPage("Index");
+                }
                 TempData["FlashMessage.Type"] = "success";
 				TempData["FlashMessage.Text"] = string.Format("User {0} is added",
 				MyUser.Name);
-				return Redirect("/users/login");
+				return Redirect("/");
 			}
 			return Page();
 		}

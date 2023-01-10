@@ -1,8 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using MyCompany.Models;
+using System.Reflection.Emit;
+
 namespace MyCompany
 {
-    public class MyDbContext : DbContext
+    public class MyDbContext : IdentityDbContext
     {
         private readonly IConfiguration _configuration;
         //constructor
@@ -19,7 +22,7 @@ namespace MyCompany
 
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> AspNetUsers { get; set; }
         public DbSet<Event> Events { get; set; }
         public DbSet<Organiser> Organisers { get; set; }
         public DbSet<Session> Sessions { get; set; }
