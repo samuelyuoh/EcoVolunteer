@@ -1,5 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
+@using MyCompany.Models
+@inject SignInManager<User> SignInManager
 
 <!DOCTYPE html>
 <html lang="en">
@@ -94,7 +95,7 @@
                     @{
                         if (SignInManager.IsSignedIn(User))
                         {
-                            <li><a class="getstarted scrollto" href="/users/logout">Logout</a></li>                            
+                            <li><a class="scrollto" href="/users/logout">Logout</a></li>                            
                         }
                         else
                         {

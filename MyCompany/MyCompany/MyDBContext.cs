@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using MyCompany.Models;
 using System.Reflection.Emit;
+using Microsoft.AspNetCore.Identity;
 
 namespace MyCompany
 {
-    public class MyDbContext : IdentityDbContext
+    public class MyDbContext : IdentityDbContext<User>
     {
         private readonly IConfiguration _configuration;
         //constructor

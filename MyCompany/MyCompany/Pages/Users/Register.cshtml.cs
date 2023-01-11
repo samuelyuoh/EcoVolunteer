@@ -10,9 +10,9 @@ namespace MyCompany.Pages.Users
     {
 		private readonly UserService _userService;
 		private IWebHostEnvironment _environment;
-        private UserManager<IdentityUser> userManager { get; }
-        private SignInManager<IdentityUser> signInManager { get; }
-        public RegisterModel(UserService userService, IWebHostEnvironment environment, UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        private UserManager<User> userManager { get; }
+        private SignInManager<User> signInManager { get; }
+        public RegisterModel(UserService userService, IWebHostEnvironment environment, UserManager<User> userManager, SignInManager<User> signInManager)
 		{
 			_userService = userService;
 			_environment = environment;
@@ -35,7 +35,7 @@ namespace MyCompany.Pages.Users
 			if (ModelState.IsValid)
 			{
 				//check employeeID
-				User? employee = _userService.GetUserByEmail(MyUser.Email);
+				User? employee = _userService.GetUserByNRIC(MyUser.NRIC);
 				if (employee != null)
 				{
 					TempData["FlashMessage.Type"] = "danger";
@@ -43,18 +43,20 @@ namespace MyCompany.Pages.Users
 					"Email {0} alreay exists", MyUser.Email);
 					return Page();
 				}
-                _userService.AddUser(MyUser);
-                var result = await userManager.CreateAsync(MyUser);
+                var result = await userManager.CreateAsync(MyUser, MyUser.Password);
                 if (result.Succeeded)
-                {
-                    await signInManager.SignInAsync(MyUser, false);
-                    return RedirectToPage("Index");
+				{
+					//_userService.AddUser(MyUser);
+					await signInManager.SignInAsync(MyUser, false);
+                    TempData["FlashMessage.Type"] = "success";
+                    TempData["FlashMessage.Text"] = string.Format("User {0} is added",
+                    MyUser.UserName);
+                    return Redirect("/");
                 }
-                TempData["FlashMessage.Type"] = "success";
-				TempData["FlashMessage.Text"] = string.Format("User {0} is added",
-				MyUser.Name);
-				return Redirect("/");
-			}
+                TempData["FlashMessage.Type"] = "danger";
+                TempData["FlashMessage.Text"] = string.Format(result.ToString());
+                return Page();
+            }
 			return Page();
 		}
 	}

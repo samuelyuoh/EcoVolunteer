@@ -255,3 +255,6 @@ C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debu
 C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\libman.json
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\ryant\source\repos\samuelyuoh\EcoVolunteer\MyCompany\MyCompany\obj\Debug\net6.0\MyCompany.MvcApplicationPartsAssemblyInfo.cs

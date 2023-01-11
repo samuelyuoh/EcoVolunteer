@@ -1,18 +1,21 @@
 using Microsoft.AspNetCore.Identity;
 using MyCompany;
 using MyCompany.Services;
+using MyCompany.Models;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<MyDbContext>();
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<MyDbContext>();
-builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", options
-=>
-{
-    options.Cookie.Name = "MyCookieAuth";
-});
+builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
+        .AddEntityFrameworkStores<MyDbContext>();
+//builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<MyDbContext>();
+//builder.Services.AddAuthentication("MyCookieAuth").AddCookie("MyCookieAuth", options =>
+//{
+    //options.Cookie.Name = "MyCookieAuth";
+//});
 builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddScoped<EmployeeService>();
 builder.Services.AddScoped<AchievementService>();

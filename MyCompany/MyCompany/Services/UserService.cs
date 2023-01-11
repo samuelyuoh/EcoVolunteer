@@ -13,10 +13,10 @@ namespace MyCompany.Services
 		{
 			return _context.AspNetUsers.OrderBy(m => m.Id).ToList();	
 		}
-		public User? GetUserByEmail(string email)
+		public User? GetUserByNRIC(string nric)
 		{
 			User? user = _context.AspNetUsers.FirstOrDefault(
-			x => x.NRIC.Equals(email));
+			x => x.NRIC.Equals(nric));
 			return user;
 		}
 		public void AddUser(User user)

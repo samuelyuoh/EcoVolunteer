@@ -8,8 +8,6 @@ namespace MyCompany.Models
 {
 	public class User : IdentityUser
 	{
-		[Required, MaxLength(50)]
-		public string Name { get; set; } = string.Empty;
 
 		[Required, Range(0, 120)]
 		public int Age { get; set; } = 0;
@@ -30,10 +28,6 @@ namespace MyCompany.Models
 		[Required, RegularExpression(@"^(6|8|9)\d{7}$", ErrorMessage = "Invalid Phone number.")]
 		[DataType(DataType.PhoneNumber)]
 		public int Phone { get; set; }
-
-		[Required]
-		[DataType(DataType.EmailAddress)]
-		public string EmailAddress { get; set; } = string.Empty;
 
 		[Required(ErrorMessage = "Password is required.")]
 		[DataType(DataType.Password)]

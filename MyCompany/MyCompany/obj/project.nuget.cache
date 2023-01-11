@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zE821gLA4P4mnkuG32O0ndT6yn9mqS943ablNtCo5WoMqQfkvYhTQLnnQ5n9lClAYO/pGQOBp/kPUdsOb7P2Kg==",
+  "dgSpecHash": "fhZNnmWCEFjOxpMy5BJEXsw1QXiIsnTvntOA63Hlnna3Uo4rJcXILAaYmnhluy8VFDaVR0RPaoBih/j06sV7tQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ryant\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\MyCompany.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.1\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.1.nupkg.sha512",
+    "C:\\Users\\ryant\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.1\\microsoft.aspnetcore.identity.ui.6.0.1.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -41,7 +42,8 @@
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
-    "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\6.0.1\\microsoft.extensions.fileproviders.embedded.6.0.1.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\2.2.0\\microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.1\\microsoft.extensions.identity.core.6.0.1.nupkg.sha512",
     "C:\\Users\\ryant\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.1\\microsoft.extensions.identity.stores.6.0.1.nupkg.sha512",
