@@ -213,10 +213,6 @@ namespace MyCompany.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ExpLevel")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("GuideUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -228,7 +224,6 @@ namespace MyCompany.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MinAge")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("OrganisationName")

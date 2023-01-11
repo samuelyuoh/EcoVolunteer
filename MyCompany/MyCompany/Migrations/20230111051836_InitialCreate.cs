@@ -70,8 +70,7 @@ namespace MyCompany.Migrations
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MinAge = table.Column<int>(type: "int", nullable: false),
-                    ExpLevel = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MinAge = table.Column<int>(type: "int", nullable: true),
                     GuideUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Status = table.Column<int>(type: "int", nullable: false),
                     OrganisationName = table.Column<string>(type: "nvarchar(max)", nullable: true)

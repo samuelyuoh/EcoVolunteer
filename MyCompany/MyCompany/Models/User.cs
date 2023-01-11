@@ -16,7 +16,7 @@ namespace MyCompany.Models
 		[Required, Range(0, 120)]
 		public int Age { get; set; } = 0;
 
-        [Required, RegularExpression(@"^[STFG]\d{7}[A-Z]$", ErrorMessage = "Invalid NRIC.")]
+        [RegularExpression(@"^[STFG]\d{7}[A-Z]$", ErrorMessage = "Invalid NRIC.")]
         public string NRIC { get; set; } = string.Empty;
 
         [Required]

@@ -12,7 +12,7 @@ using MyCompany;
 namespace MyCompany.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20230109164621_InitialCreate")]
+    [Migration("20230111051836_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -216,10 +216,6 @@ namespace MyCompany.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ExpLevel")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("GuideUrl")
                         .HasColumnType("nvarchar(max)");
 
@@ -231,7 +227,6 @@ namespace MyCompany.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("MinAge")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("OrganisationName")

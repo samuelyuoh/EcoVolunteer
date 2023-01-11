@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NqEMT+7FbMiJwdCLIK61tDlzUlhg/RBPIgNqKOlp/Xs=",
+  "Hash": "YU9mJYxEqK6186zbq64orr0n5L53Oc7iUEL06oEPs20=",
   "Source": "MyCompany",
   "BasePath": "_content/MyCompany",
   "Mode": "Default",
@@ -1156,6 +1156,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\2.jpg"
     },
     {
+      "Identity": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\Uploads\\63ae37e4-0445-4417-b465-30714337b4db.png",
+      "SourceId": "MyCompany",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\",
+      "BasePath": "_content/MyCompany",
+      "RelativePath": "Uploads/63ae37e4-0445-4417-b465-30714337b4db.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\63ae37e4-0445-4417-b465-30714337b4db.png"
+    },
+    {
       "Identity": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\Uploads\\661ff621-6542-4367-9d9d-47a476392fcc.jpeg",
       "SourceId": "MyCompany",
       "SourceType": "Discovered",
@@ -1341,6 +1358,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\clients\\client-8.png"
+    },
+    {
+      "Identity": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\Uploads\\Events\\grey.png",
+      "SourceId": "MyCompany",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\",
+      "BasePath": "_content/MyCompany",
+      "RelativePath": "Uploads/Events/grey.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Events\\grey.png"
     },
     {
       "Identity": "C:\\Users\\samue\\source\\repos\\samuelyuoh\\EcoVolunteer\\MyCompany\\MyCompany\\wwwroot\\Uploads\\Events\\no events.png",

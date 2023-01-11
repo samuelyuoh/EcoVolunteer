@@ -6,6 +6,7 @@ namespace MyCompany.Models
     public class Event
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EventId { get; set; }
 
         [Required]
@@ -56,10 +57,6 @@ namespace MyCompany.Models
         [Display(Name = "Minimum Age")]
         public int? MinAge { get; set; }
 
-        [Required]
-        [Display(Name = "Experience Level Required")]
-        public string ExpLevel { get; set; } = string.Empty;
-
         [DataType(DataType.ImageUrl)]
         public string? GuideUrl { get; set; } = string.Empty;
 
@@ -70,9 +67,9 @@ namespace MyCompany.Models
         [Display(Name = "Organisation Name")]
         public string? OrganisationName { get; set; } = string.Empty;
 
-        public List<Organiser> Organisers { get; set; }
+        public List<Organiser> Organisers { get; set; } = new();
 
-        public List<Session> Sessions { get; set; }
+        public List<Session> Sessions { get; set; } = new();
 
         /*[ForeignKey("User")]
         public int UserId { get; set; }
